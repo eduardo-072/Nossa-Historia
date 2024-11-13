@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.barra-superrior {
+    height: 100px;
+    width: 1920px;
+    background-color: red;
+}
