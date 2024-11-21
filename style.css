@@ -11,17 +11,17 @@ body {
     padding: 10px 0; /* Espaçamento acima e abaixo do texto */
     font-size: 18px; /* Tamanho da fonte */
     width: 100%; /* Faz a faixa ocupar toda a largura da página */
-    position: fixed; /* Fixa a faixa no topo da página */
+    position: relative; /* Fixa a faixa no topo da página */
     top: 0; /* Coloca a faixa no topo */
     left: 0; /* Alinha a faixa à esquerda */
     z-index: 1000; /* Garante que a faixa fique acima de outros elementos */
 }
 
 .fotos {
-    width: 400px;
-    height: 400px;
+    width: 800px;
+    height: 800px;
     position: relative;
     top: 50%;
-    left: 30%;
+    left: 13%;
 
 }
