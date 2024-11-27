@@ -1,27 +1,111 @@
-body {
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffff;
+}
+
+h1, h2 {
+    margin-bottom: 1em;
+
 }
 
 
-.barra-superior {
-    background-color: #d11717; /* Cor de fundo da faixa */
-    color: white; /* Cor do texto */
-    text-align: center; /* Alinha o texto no centro */
-    padding: 10px 0; /* Espaçamento acima e abaixo do texto */
-    font-size: 18px; /* Tamanho da fonte */
-    width: 100%; /* Faz a faixa ocupar toda a largura da página */
-    position: relative; /* Fixa a faixa no topo da página */
-    top: 0; /* Coloca a faixa no topo */
-    left: 0; /* Alinha a faixa à esquerda */
-    z-index: 1000; /* Garante que a faixa fique acima de outros elementos */
+    .barra-superior {
+        background-color: #d11717;
+        color: white;  
+        text-align: center;   
+        padding: 10px 0;  
+        font-size: 18px; 
+        width: 100%;  
+        position: relative; 
+        top: 0; 
+        left: 0; 
+        z-index: 1000;
+    }
+
+.barra-superior h1 {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
 }
 
+.barra-superior a {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1.5em;
+    background-color: white;
+    color: #ff6f61;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Conteúdo */
+.conteudo {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+article h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+/* Imagens */
 .fotos {
-    width: 800px;
-    height: 800px;
-    position: relative;
-    top: 50%;
-    left: 13%;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+}
 
+/* Responsividade */
+@media (max-width: 1080px) {
+    .barra-superior h1 {
+        font-size: 1.2em;
+    }
+
+    .barra-superior a {
+        padding: 0.5em 1em;
+        font-size: 0.9em;
+    }
+
+    article h1 {
+        font-size: 1.6em;
+    }
+
+    article h2 {
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+    }
+
+    .fotos {
+        max-width: 100%;
+    }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .barra-superior h1 {
+        font-size: 1.1em;
+    }
+
+    .barra-superior a {
+        padding: 0.4em 0.8em;
+        font-size: 0.8em;
+    }
+
+    article h1 {
+        font-size: 1.4em;
+    }
 }
